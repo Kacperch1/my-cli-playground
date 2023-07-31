@@ -1,11 +1,13 @@
+##asking for todays temperature
 temperature: float = float(input("whats the temperature today?"))
-todaysTemperatoreMessage: str = "today is " + str(temperature) + " degree "
+todaysTemperatureMessage: str = "today is " + str(temperature) + " degree "
+
 if temperature <= 0:
-    print(todaysTemperatoreMessage +"you need warm clothes")
+    print(todaysTemperatureMessage +"you need warm clothes")
 elif temperature <= 20:
-    print(todaysTemperatoreMessage + "it's a nice temperature")
+    print(todaysTemperatureMessage + "it's a nice temperature")
 else:
-    print(todaysTemperatoreMessage+ "it's very hot outside you should drink more water")
+    print(todaysTemperatureMessage+ "it's very hot outside you should drink more water")
 
 ## TODO
 ## 1. Simplyfy message about temperature.
